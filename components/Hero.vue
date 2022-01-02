@@ -1,12 +1,11 @@
 <template>
   <div
-    class="flex px-32 py-28 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-400 h-fit"
+    class="flex px-32 py-20 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-400 h-fit"
   >
-    <div class="flex flex-col space-y-12">
+    <div class="flex flex-1 flex-col space-y-12 my-auto">
       <h1 class="text-4xl font-semibold text-white">
-        We are specialist in <br />
-        Website, Mobile Application <br />
-        and Blockchain.
+        We build and deliver Website, Mobile Application <br />
+        and Blockchain with maximum quality and fantastic design.
       </h1>
       <h3 class="text-xl text-white">
         Proactively coordinate quality quality vectors vis-a-vis supply chains.
@@ -18,6 +17,9 @@
       >
         View Portfolio
       </button>
+    </div>
+    <div class="flex flex-1 justify-end">
+      <img class="w-4/6 mr-10" src="/hero.svg" alt="hero" />
     </div>
   </div>
 </template>

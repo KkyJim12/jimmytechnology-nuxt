@@ -1,7 +1,7 @@
 <template>
   <nav class="flex px-32 py-5 bg-white">
     <div class="flex items-center">
-      <h1 class="text-xl font-semibold">JimmyTechnology</h1>
+      <h1 class="text-xl font-semibold cursor-pointer">JimmyTechnology</h1>
     </div>
     <div class="mx-auto">
       <ul class="flex items-center space-x-8">

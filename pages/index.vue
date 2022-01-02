@@ -2,6 +2,9 @@
   <main>
     <Navbar />
     <Hero />
+    <Service />
+    <About />
+    <Portfolio />
   </main>
 </template>
 
