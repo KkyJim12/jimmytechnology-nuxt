@@ -5,6 +5,9 @@
     <Service />
     <About />
     <Portfolio />
+    <Blog />
+    <Contact />
+    <Footer />
   </main>
 </template>
 

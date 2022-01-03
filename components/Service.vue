@@ -28,7 +28,7 @@ export default {
           image: '/ui-ux.svg',
           name: 'UI/UX',
           des1: 'We use specific tools for designing',
-          des2: 'such as Figma or Adobe XD',
+          des2: 'such as Figma and Adobe XD',
         },
         {
           image: '/web.svg',

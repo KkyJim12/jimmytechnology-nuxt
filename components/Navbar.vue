@@ -1,7 +1,7 @@
 <template>
   <nav class="flex px-32 py-5 bg-white">
     <div class="flex items-center">
-      <h1 class="text-xl font-semibold cursor-pointer">JimmyTechnology</h1>
+      <img class="cursor-pointer w-60" src="/logo.svg" alt="logo" />
     </div>
     <div class="mx-auto">
       <ul class="flex items-center space-x-8">
@@ -22,7 +22,7 @@
     <div class="flex items-center ml-auto">
       <div class="flex items-center mr-6">
         <button
-          class="px-10 py-2 font-semibold text-white duration-300 transform bg-blue-900 rounded hover:scale-110"
+          class="px-10 py-2 font-semibold text-white duration-300 transform bg-blue-900 rounded hover:scale-110 hover:shadow-md"
         >
           Contact us
         </button>
@@ -32,7 +32,7 @@
           @click="changeLanguage('EN')"
           :class="
             language === 'EN'
-              ? 'pr-3 text-lg font-semibold text-gray-700 border-r-2 border-gray-500'
+              ? 'pr-3 text-lg font-semibold text-blue-800 border-r-2 border-gray-500'
               : 'pr-3 text-lg font-semibold text-gray-500 border-r-2 border-gray-500'
           "
         >
@@ -42,7 +42,7 @@
           @click="changeLanguage('TH')"
           :class="
             language === 'TH'
-              ? 'pl-3 text-lg font-semibold text-gray-700'
+              ? 'pl-3 text-lg font-semibold text-blue-800'
               : 'pl-3 text-lg font-semibold text-gray-500'
           "
         >

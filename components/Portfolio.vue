@@ -7,7 +7,7 @@
       <div
         v-for="item in projectLists"
         :key="index"
-        class="flex flex-col flex-1 rounded"
+        class="flex flex-col flex-1 rounded transform hover:scale-110 duration-300 cursor-pointer hover:shadow-md"
       >
         <img :src="item.image" alt="item.name" />
         <div class="flex flex-col bg-white p-5 rounded-b-lg">
@@ -32,24 +32,24 @@ export default {
     return {
       projectLists: [
         {
-          image: '/project.svg',
+          image: '/project-1.svg',
           name: 'Project 1',
-          description: 'Website Responsive',
+          description: 'Mobile Application',
         },
         {
-          image: '/project.svg',
-          name: 'Project 1',
-          description: 'Website Responsive',
+          image: '/project-2.svg',
+          name: 'Project 2',
+          description: 'AI Robotic',
         },
         {
-          image: '/project.svg',
-          name: 'Project 1',
-          description: 'Website Responsive',
+          image: '/project-3.svg',
+          name: 'Project 3',
+          description: 'Smart IOT',
         },
         {
-          image: '/project.svg',
-          name: 'Project 1',
-          description: 'Website Responsive',
+          image: '/project-4.svg',
+          name: 'Project 4',
+          description: 'VR/AR',
         },
       ],
     }
