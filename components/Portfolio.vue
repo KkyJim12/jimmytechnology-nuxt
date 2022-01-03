@@ -1,16 +1,16 @@
 <template>
-  <div class="flex flex-col py-20 px-32 space-y-20 bg-portfolio">
-    <div class="flex w-full justify-center">
-      <h1 class="text-4xl text-white font-semibold">Portfolio</h1>
+  <div class="flex flex-col px-32 py-20 space-y-20 bg-portfolio">
+    <div class="flex justify-center w-full">
+      <h1 class="text-4xl font-semibold text-white">Portfolio</h1>
     </div>
     <div class="flex space-x-20">
       <div
         v-for="item in projectLists"
-        :key="index"
-        class="flex flex-col flex-1 rounded transform hover:scale-110 duration-300 cursor-pointer hover:shadow-md"
+        :key="item.name"
+        class="flex flex-col flex-1 duration-300 transform rounded cursor-pointer hover:scale-110 hover:shadow-md"
       >
         <img :src="item.image" alt="item.name" />
-        <div class="flex flex-col bg-white p-5 rounded-b-lg">
+        <div class="flex flex-col p-5 bg-white rounded-b-lg">
           <h3 class="text-lg font-semibold">{{ item.name }}</h3>
           <h5>{{ item.description }}</h5>
         </div>

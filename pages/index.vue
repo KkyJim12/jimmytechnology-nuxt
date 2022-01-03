@@ -1,12 +1,14 @@
 <template>
   <main>
     <Navbar />
-    <Hero />
-    <Service />
-    <About />
-    <Portfolio />
-    <Blog />
-    <Contact />
+    <div v-scroll-spy>
+      <Hero id="home" />
+      <Service id="service" />
+      <About id="about" />
+      <Portfolio id="portfolio" />
+      <Blog id="blog" />
+      <Contact id="contact" />
+    </div>
     <Footer />
   </main>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <div class="flex py-20 px-32 bg-indigo-900">
-    <div class="flex flex-col space-y-12 flex-1 ml-40">
-      <h1 class="text-white text-4xl text-semibold mb-10 mt-4">
+  <div class="flex px-32 py-20 bg-indigo-900">
+    <div class="flex flex-col flex-1 ml-40 space-y-12">
+      <h1 class="mt-4 mb-10 text-4xl text-white text-semibold">
         Let's work together
       </h1>
       <div v-for="item in contactLists" class="flex flex-col">
@@ -13,22 +13,22 @@
           </div>
         </div>
       </div>
-      <div class="flex space-x-2 ml-16 pt-12">
+      <div class="flex pt-12 ml-16 space-x-2">
         <div v-for="item in socialLists">
           <img
-            class="cursor-pointer transform hover:scale-110 duration-300"
+            class="duration-300 transform cursor-pointer hover:scale-110"
             :src="item.image"
             :alt="item.name"
           />
         </div>
       </div>
     </div>
-    <div class="flex flex-1 justify-center">
-      <div class="flex flex-col bg-white rounded-2xl p-10 w-4/6 space-y-8">
+    <div class="flex justify-center flex-1">
+      <div class="flex flex-col w-4/6 p-10 space-y-8 bg-white rounded-2xl">
         <div class="flex flex-col space-y-2">
           <label class="text-xl font-semibold">Name</label>
           <input
-            class="border border-gray-200 rounded-lg px-4 py-2 focus:outline-none"
+            class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-900"
             type="text"
             placeholder="John Smith"
           />
@@ -37,7 +37,7 @@
         <div class="flex flex-col space-y-2">
           <label class="text-xl font-semibold">Email</label>
           <input
-            class="border border-gray-200 rounded-lg px-4 py-2 focus:outline-none"
+            class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-900"
             type="text"
             placeholder="example@mail.com"
           />
@@ -46,13 +46,13 @@
         <div class="flex flex-col space-y-2">
           <label class="text-xl font-semibold">Message</label>
           <textarea
-            class="border border-gray-200 rounded-lg px-4 py-2 resize-none h-40 focus:outline-none"
+            class="h-40 px-4 py-2 border border-gray-200 rounded-lg resize-none focus:outline-none focus:border-blue-900"
             placeholder="Message"
           ></textarea>
         </div>
         <div>
           <button
-            class="bg-blue-900 rounded-lg text-white flex justify-center w-full py-2 transform hover:text-blue-900 hover:bg-white border hover:border-blue-900"
+            class="flex justify-center w-full py-2 text-white transform bg-blue-900 border rounded-lg hover:text-blue-900 hover:bg-white hover:border-blue-900"
           >
             Send
           </button>

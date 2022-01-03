@@ -1,6 +1,6 @@
 <template>
   <div class="flex px-32 py-40">
-    <div class="flex flex-1 justify-center">
+    <div class="flex justify-center flex-1">
       <img src="/about.svg" alt="about" />
     </div>
     <div class="flex flex-col flex-1 space-y-10">
