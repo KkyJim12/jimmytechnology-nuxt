@@ -5,7 +5,7 @@
       <Hero id="home" />
       <Service id="service" />
       <About id="about" />
-      <Portfolio id="portfolio" />
+      <Portfolio id="portfolio" /> 
       <Blog id="blog" />
       <Contact id="contact" />
     </div>

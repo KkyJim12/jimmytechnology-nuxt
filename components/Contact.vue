@@ -1,7 +1,9 @@
 <template>
-  <div class="flex px-32 py-20 bg-indigo-900">
-    <div class="flex flex-col flex-1 ml-40 space-y-12">
-      <h1 class="mt-4 mb-10 text-4xl text-white text-semibold">
+  <div class="flex flex-col px-12 py-20 bg-indigo-900 lg:px-32 lg:flex-row">
+    <div
+      class="flex flex-col items-start flex-1 order-last ml-0 space-y-12 lg:ml-40 lg:order-first"
+    >
+      <h1 class="mt-4 mt-20 mb-10 text-4xl text-white lg:mt-0 text-semibold">
         Let's work together
       </h1>
       <div v-for="item in contactLists" class="flex flex-col">
@@ -13,7 +15,9 @@
           </div>
         </div>
       </div>
-      <div class="flex pt-12 ml-16 space-x-2">
+      <div
+        class="flex justify-center w-full pt-12 ml-0 space-x-2 lg:ml-16 lg:justify-start"
+      >
         <div v-for="item in socialLists">
           <img
             class="duration-300 transform cursor-pointer hover:scale-110"
@@ -24,7 +28,9 @@
       </div>
     </div>
     <div class="flex justify-center flex-1">
-      <div class="flex flex-col w-4/6 p-10 space-y-8 bg-white rounded-2xl">
+      <div
+        class="flex flex-col w-full p-10 space-y-8 bg-white lgw-4/6 rounded-2xl"
+      >
         <div class="flex flex-col space-y-2">
           <label class="text-xl font-semibold">Name</label>
           <input

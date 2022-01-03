@@ -1,9 +1,11 @@
 <template>
-  <div class="flex flex-col px-32 py-20 space-y-20">
+  <div class="flex flex-col px-12 py-20 space-y-20 lg:px-32">
     <div class="flex justify-center w-full">
       <h1 class="text-4xl font-semibold">Blog</h1>
     </div>
-    <div class="grid grid-cols-12 gap-x-20">
+    <div
+      class="grid grid-cols-4 lg:grid-cols-12 gap-x-0 lg:gap-x-20 gap-y-10 lg:gap-y-0"
+    >
       <div
         v-for="item in blogLists"
         class="col-span-4 duration-300 transform cursor-pointer hover:scale-110"
