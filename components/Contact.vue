@@ -76,7 +76,7 @@ export default {
         {
           image: '/email.svg',
           name: this.$t('email'),
-          detail: 'jirakarnjim1@gmail.com',
+          detail: 'piyakarn.nmk@gmail.com',
         },
         {
           image: '/phone.svg',
