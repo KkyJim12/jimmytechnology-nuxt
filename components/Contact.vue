@@ -4,7 +4,7 @@
       class="flex flex-col items-start flex-1 order-last ml-0 space-y-12 lg:ml-40 lg:order-first"
     >
       <h1 class="mt-4 mt-20 mb-10 text-4xl text-white lg:mt-0 text-semibold">
-        Let's work together
+        {{ $t('contactButton') }}
       </h1>
       <div v-for="item in contactLists" class="flex flex-col">
         <div class="flex space-x-5">
@@ -29,10 +29,10 @@
     </div>
     <div class="flex justify-center flex-1">
       <div
-        class="flex flex-col w-full p-10 space-y-8 bg-white lgw-4/6 rounded-2xl"
+        class="flex flex-col w-full p-10 space-y-8 bg-white lg:w-4/6 rounded-2xl"
       >
         <div class="flex flex-col space-y-2">
-          <label class="text-xl font-semibold">Name</label>
+          <label class="text-xl font-semibold">{{ $t('name') }}</label>
           <input
             class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-900"
             type="text"
@@ -41,7 +41,7 @@
         </div>
 
         <div class="flex flex-col space-y-2">
-          <label class="text-xl font-semibold">Email</label>
+          <label class="text-xl font-semibold">{{ $t('email') }}</label>
           <input
             class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-900"
             type="text"
@@ -50,7 +50,7 @@
         </div>
 
         <div class="flex flex-col space-y-2">
-          <label class="text-xl font-semibold">Message</label>
+          <label class="text-xl font-semibold">{{ $t('message') }}</label>
           <textarea
             class="h-40 px-4 py-2 border border-gray-200 rounded-lg resize-none focus:outline-none focus:border-blue-900"
             placeholder="Message"
@@ -60,7 +60,7 @@
           <button
             class="flex justify-center w-full py-2 text-white transform bg-blue-900 border rounded-lg hover:text-blue-900 hover:bg-white hover:border-blue-900"
           >
-            Send
+            {{ $t('send') }}
           </button>
         </div>
       </div>
@@ -75,18 +75,18 @@ export default {
       contactLists: [
         {
           image: '/email.svg',
-          name: 'Email',
+          name: this.$t('email'),
           detail: 'jirakarnjim1@gmail.com',
         },
         {
           image: '/phone.svg',
-          name: 'Phone',
-          detail: '0658528414',
+          name: this.$t('phone'),
+          detail: '065-8528414',
         },
         {
           image: '/pin.svg',
-          name: 'Address',
-          detail: '1655/149 Makkasan Ratchathewi Bangkok 10400',
+          name: this.$t('address'),
+          detail: this.$t('addressDetail'),
         },
       ],
       socialLists: [

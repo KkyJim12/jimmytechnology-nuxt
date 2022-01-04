@@ -58,7 +58,7 @@
                 : 'pl-3 text-lg font-semibold text-gray-500'
             "
           >
-            TH
+            ไทย
           </button>
         </NuxtLink>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col px-12 py-20 space-y-20 lg:px-32">
     <div class="flex justify-center w-full">
-      <h1 class="text-4xl font-semibold">Blog</h1>
+      <h1 class="text-4xl font-semibold">{{ $t('blog') }}</h1>
     </div>
     <div
       class="grid grid-cols-4 lg:grid-cols-12 gap-x-0 lg:gap-x-20 gap-y-10 lg:gap-y-0"
@@ -32,7 +32,7 @@
       <button
         class="px-16 py-3 text-xl text-blue-900 bg-white border border-blue-900 rounded-xl hover:border-0 hover:text-white hover:bg-blue-900"
       >
-        See all
+        {{ $t('seeAll') }}
       </button>
     </div>
   </div>

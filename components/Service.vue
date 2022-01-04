@@ -13,8 +13,8 @@
         <img class="w-min" :src="item.image" :alt="item.name" />
         <h3 class="text-lg font-semibold">{{ item.name }}</h3>
         <div class="flex flex-col items-center text-center">
-          <p>{{ item.des1 }}</p>
-          <p>{{ item.des2 }}</p>
+          <p>{{ item.description1 }}</p>
+          <p>{{ item.description2 }}</p>
         </div>
       </div>
     </div>
@@ -29,27 +29,27 @@ export default {
         {
           image: '/ui-ux.svg',
           name: this.$t('uiUx'),
-          des1: 'We use specific tools for designing',
-          des2: 'such as Figma and Adobe XD',
+          description1: this.$t('uiUxDescription1'),
+          description2: this.$t('uiUxDescription2'),
         },
         {
           image: '/web.svg',
           name: this.$t('webDevelopment'),
-          des1: 'We use new technologies to build a website.',
-          des2: 'such as React, VueJS, Laravel NodeJS and Golang',
+          description1: this.$t('webDevelopmentDescription1'),
+          description2: this.$t('webDevelopmentDescription2'),
         },
         {
           image: '/app.svg',
           name: this.$t('mobileApplication'),
-          des1: 'We use high performance tools',
-          des2: 'such as Flutter and React Native',
+          description1: this.$t('mobileApplicationDescription1'),
+          description2: this.$t('mobileApplicationDescription2'),
         },
 
         {
           image: '/blockchain.svg',
           name: this.$t('blockchain'),
-          des1: 'We provide blockchain technologies',
-          des2: 'such as Solidity and Web3',
+          description1: this.$t('blockchainDescription1'),
+          description2: this.$t('blockchainDescription2'),
         },
       ],
     }

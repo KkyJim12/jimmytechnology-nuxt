@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col px-12 py-20 space-y-20 lg:px-32 bg-portfolio">
     <div class="flex justify-center w-full">
-      <h1 class="text-4xl font-semibold text-white">Portfolio</h1>
+      <h1 class="text-4xl font-semibold text-white">{{ $t('ourPortfolio') }}</h1>
     </div>
     <div
       class="grid grid-cols-3 lg:grid-cols-12 lg:gap-x-20 gap-y-10 lg:gap-y-0"
