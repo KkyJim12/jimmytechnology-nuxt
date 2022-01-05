@@ -10,7 +10,7 @@
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:prettier",
     "lintfix": "prettier --write --list-different .",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^1.3.0",
