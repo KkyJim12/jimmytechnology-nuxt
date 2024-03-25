@@ -9,6 +9,7 @@
       <div
         v-for="item in blogLists"
         class="col-span-4 duration-300 transform cursor-pointer hover:scale-110"
+        data-aos="fade-up" data-aos-delay="100"
       >
         <img class="w-full" :src="item.image" alt="blog" />
         <div

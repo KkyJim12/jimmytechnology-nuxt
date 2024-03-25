@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'jimmytechnology-nuxt',
+    title: 'Jimmytechnology | Software House',
     htmlAttrs: {
       lang: 'en',
     },
@@ -14,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/icon.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -24,6 +24,7 @@ export default {
   plugins: [
     { src: '~/plugins/vue2-scrollspy', ssr: false },
     { src: 'plugins/owl.js', ssr: false },
+    { src: 'plugins/aos.js', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

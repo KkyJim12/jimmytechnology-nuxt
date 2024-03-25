@@ -6,17 +6,18 @@
     <div
       class="flex flex-col justify-start space-y-16 lg:flex-row lg:space-y-0"
     >
-      <div
-        v-for="item in serviceLists"
-        class="flex flex-col items-center flex-1 space-y-5"
-      >
-        <img class="w-min" :src="item.image" :alt="item.name" />
-        <h3 class="text-lg font-semibold">{{ item.name }}</h3>
-        <div class="flex flex-col items-center text-center">
-          <p>{{ item.description1 }}</p>
-          <p>{{ item.description2 }}</p>
+        <div
+          v-for="(item,indx) in serviceLists"
+          class="flex flex-col items-center flex-1 space-y-5"
+          data-aos="fade-up" data-aos-delay="100"
+        >
+            <img class="w-min" :src="item.image" :alt="item.name" />
+            <h3 class="text-lg font-semibold">{{ item.name }}</h3>
+            <div class="flex flex-col items-center text-center">
+              <p>{{ item.description1 }}</p>
+              <p>{{ item.description2 }}</p>
+            </div>
         </div>
-      </div>
     </div>
   </div>
 </template>
